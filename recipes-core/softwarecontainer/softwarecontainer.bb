@@ -17,7 +17,7 @@ SRC_URI += "\
     file://softwarecontainer-agent.service \
 "
 
-SRCREV = "bbc61d42d3509f15b5afe4ff748333308c6526b6"
+SRCREV = "5c9e9550212feb7e5bb30215d22396d6eb20a5e4"
 
 DEPENDS = "ivi-logging glibmm lxc jansson"
 
@@ -32,7 +32,7 @@ PACKAGECONFIG[dbusgateway] = "-DENABLE_DBUSGATEWAY=ON,-DENABLE_DBUSGATEWAY=OFF,,
 PACKAGECONFIG[cgroupsgateway] = "-DENABLE_CGROUPSGATEWAY=ON,-DENABLE_CGROUPSGATEWAY=OFF"
 PACKAGECONFIG ?= "networkgateway devicenodegateway dbusgateway cgroupsgateway"
 
-EXTRA_OECMAKE += "-DENABLE_TEST=OFF -DENABLE_EXAMPLES=OFF -DENABLE_SYSTEMD=OFF"
+EXTRA_OECMAKE += "-DENABLE_TEST=OFF -DENABLE_EXAMPLES=ON -DENABLE_SYSTEMD=OFF"
 
 SYSTEMD_SERVICE_${PN} = "softwarecontainer-agent.service"
 
