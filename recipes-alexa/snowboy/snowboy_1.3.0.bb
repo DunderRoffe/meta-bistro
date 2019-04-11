@@ -14,7 +14,7 @@ SRC_URI = "https://github.com/Kitt-AI/snowboy/archive/v${PV}.tar.gz"
 SRC_URI[md5sum] = "e16e117914f76f4a35facb16b0fcd61b"
 SRC_URI[sha256sum] = "93658cc5d4d83dd7a6e954d0dc1e18d1c70b1dd8623181850c4804d3aca19e96"
 
-COMPATIBLE_MACHINE = "(machine-native|android|intel-corei7-64|raspberrypi3)"
+COMPATIBLE_MACHINE = "(machine-native|android|intel-corei7-64|raspberrypi3|arp)"
 
 INSANE_SKIP_${PN} += "already-stripped"
 
